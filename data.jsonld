@@ -1,0 +1,38 @@
+{
+  "@context": {
+    "stud": "http://example.org/students/",
+    "work": "http://example.org/organisations/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "schema": "http://schema.org/"
+  },
+  "@graph": [
+    {
+      "@id": "stud:vanoutrive_hanne",
+      "@type": "foaf:Person",
+      "foaf:name": "Hanne Vanoutrive",
+      "foaf:knows": [
+        { "@id": "stud:unnamed_friend" },
+        { "@id": "stud:unnamed_enemy" }
+      ],
+      "schema:birthPlace": { "@id": "https://www.wikidata.org/wiki/Q478797" },
+      "schema:nationality": { "@id": "https://www.wikidata.org/wiki/Q31" },
+      "schema:jobTitle": "Data-analist",
+      "schema:employee": { "@id": "work:POV" },
+      "schema:owns": { "@id": "http://example.org/books/al_het_blauw_van_de_hemel" }
+    },
+    {
+      "@id": "stud:unnamed_friend",
+      "@type": "foaf:Person",
+      "foaf:name": "Unnamed Friend"
+    },
+    {
+      "@id": "stud:unnamed_enemy",
+      "@type": "foaf:Person",
+      "foaf:name": "Enemy Unnamed"
+    },
+    {
+      "@id": "work:POV",
+      "@type": { "@id": "https://data.vlaanderen.be/ns/generiek#AdministratieveEenheid" }
+    }
+  ]
+}
