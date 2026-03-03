@@ -16,7 +16,7 @@ ex:knows a rdf:Property;
     rdfs:label "knows"@en, "kent"@nl, "connaît"@fr;
     rdfs:comment "A person known by this person (indicating some level of reciprocated interaction between the parties)."@en ;
     rdfs:domain ex:Person ;
-    rdfs:range ex:Person.
+    rdfs:range rdfs:Resource.
 
 ex:birthPlace a rdf:Property;
     rdfs:label "Birthplace"@en, "Geboorteplaats"@nl;
