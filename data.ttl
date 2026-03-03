@@ -1,0 +1,25 @@
+@prefix ex_stud: <http://example.org/students/> .
+@prefix ex_work: <http://example.org/organisations/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix schema: <http://schema.org/> .
+
+ex_stud:vanoutrive_hanne
+    a foaf:Person ;
+    foaf:name "Hanne Vanoutrive" ;
+    foaf:knows ex_stud:unnamed_friend, ex_stud:unnamed_enemy;
+    schema:birthPlace <https://www.wikidata.org/wiki/Q478797> ;
+    schema:nationality <https://www.wikidata.org/wiki/Q31> ;
+    schema:jobTitle "Data-analist";
+    schema:employee ex_work:POV;
+    schema:owns <http://example.org/books/al_het_blauw_van_de_hemel> .
+
+ex_stud:unnamed_friend
+    a foaf:Person ;
+    foaf:name "Unnamed Friend" .
+
+ex_stud:unnamed_enemy
+    a foaf:Person ;
+    foaf:name "Enemy Unnamed" .
+
+ex_work:POV
+    a <https://data.vlaanderen.be/ns/generiek#AdministratieveEenheid> .
