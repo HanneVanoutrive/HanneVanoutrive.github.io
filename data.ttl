@@ -1,4 +1,4 @@
-@prefix voc_hv: <https://hannevanoutrive.github.io/voc.ttl>.
+@prefix voc_hv: <https://hannevanoutrive.github.io/voc.ttl#>.
 
 voc_hv:vanoutrive_hanne a voc_hv:Person ;
     voc_hv:name "Hanne Vanoutrive" ;
