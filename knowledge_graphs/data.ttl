@@ -9,7 +9,7 @@ data_hv:vanoutrive_hanne a voc_hv:Person ;
     voc_hv:jobTitle "Data-analist";
     voc_hv:employer data_hv:POV;
     voc_hv:owns <http://example.org/books/al_het_blauw_van_de_hemel>;
-    voc_hv:enrolledIn data_hv:knowledge-graphs-2025 .
+    voc_hv:enrolledIn data_hv:knowledge_graphs_2025 .
 
 data_hv:POV a voc_hv:AdministratieveEenheid;
     voc_hv:name "Provincie Oost-Vlaanderen" .
