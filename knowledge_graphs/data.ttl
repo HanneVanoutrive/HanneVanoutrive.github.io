@@ -8,7 +8,12 @@ data_hv:vanoutrive_hanne a voc_hv:Person ;
     voc_hv:nationality <https://www.wikidata.org/wiki/Q31> ;
     voc_hv:jobTitle "Data-analist";
     voc_hv:employer voc_hv:POV;
-    voc_hv:owns <http://example.org/books/al_het_blauw_van_de_hemel> .
+    voc_hv:owns <http://example.org/books/al_het_blauw_van_de_hemel>;
+    voc_hv:enrolledIn :knowledge-graphs-2025 .
 
 data_hv:POV a voc_hv:AdministratieveEenheid;
     voc_hv:name "Provincie Oost-Vlaanderen" .
+
+data_hv:knowledge_graphs_2025 a voc_hv:Course ;
+    voc_hv:name "Knowledge Graphs 2025" ;
+    voc_hv:seeAlso <https://studiekiezer.ugent.be/studiefiche/nl/E018160/2025> .
