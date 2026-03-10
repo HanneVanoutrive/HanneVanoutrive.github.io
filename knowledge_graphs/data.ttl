@@ -7,7 +7,7 @@ data_hv:vanoutrive_hanne a voc_hv:Person ;
     voc_hv:birthPlace <https://www.wikidata.org/wiki/Q478797> ;
     voc_hv:nationality <https://www.wikidata.org/wiki/Q31> ;
     voc_hv:jobTitle "Data-analist";
-    voc_hv:employer voc_hv:POV;
+    voc_hv:employer data_hv:POV;
     voc_hv:owns <http://example.org/books/al_het_blauw_van_de_hemel>;
     voc_hv:enrolledIn data_hv:knowledge-graphs-2025 .
 
