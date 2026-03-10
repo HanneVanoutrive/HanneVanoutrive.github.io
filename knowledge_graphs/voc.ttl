@@ -9,6 +9,10 @@
     rdfs:label "Administratieve Eenheid"@nl;
     rdfs:comment "Bestuurlijke eenheid waar een lidstaat rechtsbevoegdheid heeft en/of uitoefent, in het kader van lokaal, regionaal of nationaal bestuur."@nl.
 
+<#Course> a rdfs:Class ;
+    rdfs:label "Course" ;
+    rdfs:comment "A course offered at an educational institution." .
+
 <#name> a rdf:Property;
     rdfs:label "Name"@en, "Naam"@nl;
     rdfs:comment "Official  name for a Person or organisation"@en;
@@ -48,5 +52,17 @@
 <#owns> a rdf:Property;
     rdfs:label "Owns"@en, "Bezit"@nl;
     rdfs:comment "Has legal possession or control of something; to have something as your property."@en;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range rdfs:Resource .
+
+<#enrolledIn> a rdf:Property ;
+    rdfs:label "enrolled in" ;
+    rdfs:comment "Relates a person to a course they are enrolled in." ;
+    rdfs:domain <#Person> ;
+    rdfs:range <#Course> .
+
+<#seeAlso> a rdf:Property ;
+    rdfs:label "see also" ;
+    rdfs:comment "Relates a resource to another resource that describes the same thing." ;
     rdfs:domain rdfs:Resource ;
     rdfs:range rdfs:Resource .
