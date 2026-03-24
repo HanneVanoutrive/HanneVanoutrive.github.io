@@ -6,20 +6,20 @@
 <#Person> a rdfs:Class ;
     rdfs:label "Person"@en, "Persoon"@nl;
     rdfs:comment "A person (alive, dead, undead, or fictional)."@en ;
-    owl:equivalentClass <https://xmlns.com/foaf/spec/#term_Person>.
+    owl:equivalentClass foaf:Person.
 
 <#AdministratieveEenheid> a rdfs:Class;
     rdfs:label "Administratieve Eenheid"@nl;
     rdfs:comment "Bestuurlijke eenheid waar een lidstaat rechtsbevoegdheid heeft en/of uitoefent, in het kader van lokaal, regionaal of nationaal bestuur."@nl.
 
 <#Course> a rdfs:Class ;
-    rdfs:label "Course" ;
-    rdfs:comment "A course offered at an educational institution." .
+    rdfs:label "Course"@en ;
+    rdfs:comment "A course offered at an educational institution."@en .
 
 <#Photograph> a rdfs:Class ;
     rdfs:label "Photograph"@en, "Foto"@nl;
     rdfs:comment "A photograph is a visual representation created by capturing light (or other electromagnetic radiation) on a photosensitive or digital medium at a specific time, resulting in an image that depicts a real‑world scene, object, or event."@en ;
-    owl:equivalentClass <https://xmlns.com/foaf/spec/#term_Image> .
+    owl:equivalentClass foaf:Image .
 
 <#Place> a rdfs:Class ;
     rdfs:label "Place"@en, "Locatie"@nl ;
@@ -34,6 +34,7 @@
 <#knows> a rdf:Property;
     rdfs:label "knows"@en, "kent"@nl, "connaît"@fr;
     rdfs:comment "A person known by this person (indicating some level of reciprocated interaction between the parties)."@en ;
+    rdfs:subPropertyOf foaf:knows ;
     rdfs:domain <#Person> ;
     rdfs:range rdfs:Resource.
 
@@ -68,20 +69,20 @@
     rdfs:range rdfs:Resource .
 
 <#enrolledIn> a rdf:Property ;
-    rdfs:label "enrolled in" ;
-    rdfs:comment "Relates a person to a course they are enrolled in." ;
+    rdfs:label "enrolled in"@en ;
+    rdfs:comment "Relates a person to a course they are enrolled in."@en ;
     rdfs:domain <#Person> ;
     rdfs:range <#Course> .
 
 <#seeAlso> a rdf:Property ;
-    rdfs:label "see also" ;
-    rdfs:comment "Relates a resource to another resource that describes the same thing." ;
+    rdfs:label "see also"@en ;
+    rdfs:comment "Relates a resource to another resource that describes the same thing."@en ;
     rdfs:domain rdfs:Resource ;
     rdfs:range rdfs:Resource .
 
 <#photographer> a rdf:Property ;
     rdfs:label "photographer"@en, "fotograaf"@nl ;
-    rdfs:comment "A property that links a photograph (or image) to the person or organization that was primarily responsible for creating the photograph by capturing the image." ;
+    rdfs:comment "A property that links a photograph (or image) to the person or organization that was primarily responsible for creating the photograph by capturing the image."@en ;
     rdfs:domain <#Photograph> ;
     rdfs:range <#Person> .
 
