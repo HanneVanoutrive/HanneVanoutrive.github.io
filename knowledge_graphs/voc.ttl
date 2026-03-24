@@ -83,6 +83,7 @@
 <#photographer> a rdf:Property ;
     rdfs:label "photographer"@en, "fotograaf"@nl ;
     rdfs:comment "A property that links a photograph (or image) to the person or organization that was primarily responsible for creating the photograph by capturing the image."@en ;
+    rdfs:subPropertyOf foaf:maker ;
     rdfs:domain <#Photograph> ;
     rdfs:range <#Person> .
 
