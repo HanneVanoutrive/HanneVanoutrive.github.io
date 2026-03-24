@@ -27,10 +27,31 @@ data_hv:knowledge_graphs_2025 a voc_hv:Course ;
     voc_hv:photographer data_hv:dc_phyline ;
     voc_hv:depictsPerson data_hv:vanoutrive_hanne ;
     voc_hv:photographLocation <https://www.wikidata.org/entity/Q5463> ;
-    voc_hv:description "Portrait of the depicted person against a background of trees in the Rocky Mountains."@en .
+    voc_hv:description "Portrait of the depicted person against a background of trees in the Rocky Mountains.".
     
+<https://yjl.234.myftpupload.com/wp-content/uploads/2021/02/Farnsworth-House-Mies-Van-Der-Rohe-ArchEyes-Chicago-glass-house-snow-Jonathan-Rieke-7.jpg>
+    a voc_hv:Photograph ;
+    voc_hv:name "Farnsworth House Facade" ;
+    voc_hv:photographer "Jonathan Rieke" ;
+    voc_hv:photographLocation <https://share.google/dZpBAgJJ6c5GUi4AZ> ;
+    voc_hv:description "The Farnsworth House, designed by renowned architect Ludwig Mies van der Rohe between 1945 and 1951, is an example of minimalist aesthetics in modern architecture."@en .
+
+<https://www.lift-it-up.org/OnsEI/galerij/geert/fotograferen/art_4/portretten%20thuis.jpg>
+    a voc_hv:Photograph ;
+    voc_hv:name "Portret zoon" ;
+    voc_hv:photographer data_hv:wv_geert ;
+    voc_hv:depictsPerson data_hv:wv_lukas ;
+    voc_hv:photographLocation <https://www.wikidata.org/entity/Q1260195> ;
+    voc_hv:description "Portret van de zoon van de fotograaf - zwart/wit.".
+
 data_hv:dc_phyline a voc_hv:Person;
     voc_hv:name "Phyline DC" ;
     voc_hv:birthPlace <https://www.wikidata.org/entity/Q12995> ;
     voc_hv:nationality <https://www.wikidata.org/entity/Q31> .
+
+data_hv:wv_geert a voc_hv:Person;
+    voc_hv:name "Geert WV" ;
+
+data_hv:wv_lukas a voc_hv:Person;
+    voc_hv:name "Lukas WV" ;
 
