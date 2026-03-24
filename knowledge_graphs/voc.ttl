@@ -23,7 +23,7 @@
 
 <#Place> a rdfs:Class ;
     rdfs:label "Place"@en, "Locatie"@nl ;
-    rdfs:comment "A geographic location or named place in the real world."@en
+    rdfs:comment "A geographic location or named place in the real world."@en .
 
 <#name> a rdf:Property;
     rdfs:label "Name"@en, "Naam"@nl;
