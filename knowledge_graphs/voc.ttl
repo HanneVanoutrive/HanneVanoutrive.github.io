@@ -28,6 +28,7 @@
 <#name> a rdf:Property;
     rdfs:label "Name"@en, "Naam"@nl;
     rdfs:comment "Official  name for a Person or organisation"@en;
+    owl:subPropertyOf foaf:name;
     rdfs:domain rdfs:Resource ;
     rdfs:range rdfs:Literal .
 
@@ -105,8 +106,3 @@
     rdfs:comment "A textual description of the visual content of a photograph."@en ;
     rdfs:domain <#Photograph> ;
     rdfs:range rdf:langString .
-
-
-
-
-
