@@ -3,7 +3,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 data_hv:vanoutrive_hanne a voc_hv:Person ;
-    foaf:name "Hanne Vanoutrive" ;
+    voc_hv:name "Hanne Vanoutrive" ;
     voc_hv:knows 
         <https://janaverl.github.io/knowledge_graphs_lab2/0001.ttl#Jana> ,
         <https://lander6.github.io/knowledge-graph-assignment/data.ttl#lander> ,
@@ -16,15 +16,15 @@ data_hv:vanoutrive_hanne a voc_hv:Person ;
     voc_hv:enrolledIn data_hv:knowledge_graphs_2025 .
 
 data_hv:POV a voc_hv:AdministratieveEenheid ;
-    foaf:name "Provincie Oost-Vlaanderen" .
+    voc_hv:name "Provincie Oost-Vlaanderen" .
 
 data_hv:knowledge_graphs_2025 a voc_hv:Course ;
-    foaf:name "Knowledge Graphs 2025" ;
+    voc_hv:name "Knowledge Graphs 2025" ;
     voc_hv:seeAlso <https://studiekiezer.ugent.be/studiefiche/nl/E018160/2025> .
 
 <https://media.licdn.com/dms/image/v2/C4E03AQFAIpMpMPPxhw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1611654997889?e=2147483647&v=beta&t=Vm8rJa1iXE6re7FeLvy-uhVN13ab8KU-PdBqugpHDZM>
     a voc_hv:Photograph ;
-    foaf:name "Profile Picture LinkedIn" ;
+    voc_hv:name "Profile Picture LinkedIn" ;
     voc_hv:photographer data_hv:dc_phyline ;
     voc_hv:depictsPerson data_hv:vanoutrive_hanne ;
     voc_hv:photographLocation <https://www.wikidata.org/entity/Q5463> ;
@@ -32,26 +32,26 @@ data_hv:knowledge_graphs_2025 a voc_hv:Course ;
     
 <https://yjl.234.myftpupload.com/wp-content/uploads/2021/02/Farnsworth-House-Mies-Van-Der-Rohe-ArchEyes-Chicago-glass-house-snow-Jonathan-Rieke-7.jpg>
     a voc_hv:Photograph ;
-    foaf:name "Farnsworth House Facade" ;
+    voc_hv:name "Farnsworth House Facade" ;
     voc_hv:photographer "Jonathan Rieke" ;
     voc_hv:photographLocation <https://share.google/dZpBAgJJ6c5GUi4AZ> ;
     voc_hv:description "The Farnsworth House, designed by renowned architect Ludwig Mies van der Rohe between 1945 and 1951, is an example of minimalist aesthetics in modern architecture."@en .
 
 <https://www.lift-it-up.org/OnsEI/galerij/geert/fotograferen/art_4/portretten%20thuis.jpg>
     a voc_hv:Photograph ;
-    foaf:name "Portret zoon" ;
+    voc_hv:name "Portret zoon" ;
     voc_hv:photographer data_hv:wv_geert ;
     voc_hv:depictsPerson data_hv:wv_lukas ;
     voc_hv:photographLocation <https://www.wikidata.org/entity/Q1260195> ;
     voc_hv:description "Portret van de zoon van de fotograaf - zwart/wit.".
 
 data_hv:dc_phyline a voc_hv:Person;
-    foaf:name "Phyline DC" ;
+    voc_hv:name "Phyline DC" ;
     voc_hv:birthPlace <https://www.wikidata.org/entity/Q12995> ;
     voc_hv:nationality <https://www.wikidata.org/entity/Q31> .
 
 data_hv:wv_geert a voc_hv:Person;
-    foaf:name "Geert WV" .
+    voc_hv:name "Geert WV" .
 
 data_hv:wv_lukas a voc_hv:Person;
-    foaf:name "Lukas WV" .
+    voc_hv:name "Lukas WV" .
