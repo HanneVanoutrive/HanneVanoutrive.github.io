@@ -1,9 +1,12 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 <#Person> a rdfs:Class ;
     rdfs:label "Person"@en, "Persoon"@nl;
-    rdfs:comment "A person (alive, dead, undead, or fictional)."@en .
+    rdfs:comment "A person (alive, dead, undead, or fictional)."@en ;
+    owl:equivalentClass <https://xmlns.com/foaf/spec/#term_Person>.
 
 <#AdministratieveEenheid> a rdfs:Class;
     rdfs:label "Administratieve Eenheid"@nl;
@@ -12,6 +15,15 @@
 <#Course> a rdfs:Class ;
     rdfs:label "Course" ;
     rdfs:comment "A course offered at an educational institution." .
+
+<#Photograph> a rdfs:Class ;
+    rdfs:label "Photograph"@en, "Foto"@nl;
+    rdfs:comment "A photograph is a visual representation created by capturing light (or other electromagnetic radiation) on a photosensitive or digital medium at a specific time, resulting in an image that depicts a real‑world scene, object, or event."@en ;
+    owl:equivalentClass <https://xmlns.com/foaf/spec/#term_Image> .
+
+<#Place> a rdfs:Class ;
+    rdfs:label "Place"@en, "Locatie"@nl ;
+    rdfs:comment "A geographic location or named place in the real world."@en
 
 <#name> a rdf:Property;
     rdfs:label "Name"@en, "Naam"@nl;
@@ -66,3 +78,33 @@
     rdfs:comment "Relates a resource to another resource that describes the same thing." ;
     rdfs:domain rdfs:Resource ;
     rdfs:range rdfs:Resource .
+
+<#photographer> a rdf:Property ;
+    rdfs:label "photographer"@en, "fotograaf"@nl ;
+    rdfs:comment "A property that links a photograph (or image) to the person or organization that was primarily responsible for creating the photograph by capturing the image." ;
+    rdfs:domain <#Photograph> ;
+    rdfs:range <#Person> .
+
+<#depictsPerson> a rdf:Property ;
+    rdfs:label "depicts person"@en ;
+    rdfs:comment "Links a photograph to a person who is visually depicted in the image."@en ;
+    rdfs:subPropertyOf foaf:depicts ;
+    rdfs:domain <#Photograph> ;
+    rdfs:range <#Person> .
+
+<#photographLocation> a rdf:Property ;
+    rdfs:label "photograph location"@en ;
+    rdfs:comment "The geographic location where the photograph was taken."@en ;
+    rdfs:domain <#Photograph> ;
+    rdfs:range <#Place>.
+
+<#description> a rdf:Property ;
+    rdfs:label "photograph description"@en ;
+    rdfs:comment "A textual description of the visual content of a photograph."@en ;
+    rdfs:domain <#Photograph> ;
+    rdfs:range rdf:langString .
+
+
+
+
+
