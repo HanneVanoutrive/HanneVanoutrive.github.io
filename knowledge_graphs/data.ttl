@@ -17,3 +17,17 @@ data_hv:POV a voc_hv:AdministratieveEenheid;
 data_hv:knowledge_graphs_2025 a voc_hv:Course ;
     voc_hv:name "Knowledge Graphs 2025" ;
     voc_hv:seeAlso <https://studiekiezer.ugent.be/studiefiche/nl/E018160/2025> .
+
+<https://media.licdn.com/dms/image/v2/C4E03AQFAIpMpMPPxhw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1611654997889?e=2147483647&v=beta&t=Vm8rJa1iXE6re7FeLvy-uhVN13ab8KU-PdBqugpHDZM>
+    a voc_hv:Photograph ;
+    voc_hv:name "Profile Picture LinkedIn" ;
+    voc_hv:photographer data_hv:dc_phyline ;
+    voc_hv:depictsPerson data_hv:vanoutrive_hanne ;
+    voc_hv:photographLocation <https://www.wikidata.org/wiki/Q5463> ;
+    voc_hv:description "Portrait of the depicted person against a background of trees in the Rocky Mountains."@en .
+    
+data_hv:dc_phyline a voc_hv:Person;
+    voc_hv:name "Phyline DC" ;
+    voc_hv:birthPlace <https://www.wikidata.org/wiki/Q12995> ;
+    voc_hv:nationality <https://www.wikidata.org/wiki/Q31> .
+
