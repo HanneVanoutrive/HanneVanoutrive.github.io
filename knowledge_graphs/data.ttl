@@ -50,8 +50,8 @@ data_hv:dc_phyline a voc_hv:Person;
     voc_hv:nationality <https://www.wikidata.org/entity/Q31> .
 
 data_hv:wv_geert a voc_hv:Person;
-    voc_hv:name "Geert WV" ;
+    voc_hv:name "Geert WV" .
 
 data_hv:wv_lukas a voc_hv:Person;
-    voc_hv:name "Lukas WV" ;
+    voc_hv:name "Lukas WV" .
 
